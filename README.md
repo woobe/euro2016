@@ -14,8 +14,7 @@ References:
 - [Qualifying Results](http://www.uefa.com/uefaeuro/season=2016/standings/round=2000446/index.html)
 - [FIFA Ranking as of June 10 2016](http://www.fifa.com/fifa-world-ranking/ranking-table/men/)
 - [Formation](http://www.theguardian.com/football/ng-interactive/2016/jun/01/euro-2016-the-complete-guide-to-every-squad-and-every-player-in-france) or from live matches
-
-
+- [Betfair Odds](https://www.betfair.com/sport)
 
 <br>
 
