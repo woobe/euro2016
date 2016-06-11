@@ -2,9 +2,7 @@
 
 ---
 
-### Data
-
-References:
+### Data Sources:
 
 - [mr_rank](http://www.mirror.co.uk/sport/football/news/euro-2016-power-rankings-24-7600082)
 - [gd_rank](https://www.theguardian.com/football/2015/dec/10/euro-2016-draw-england-france-spain-germany)
@@ -16,15 +14,12 @@ References:
 - [Formation](http://www.theguardian.com/football/ng-interactive/2016/jun/01/euro-2016-the-complete-guide-to-every-squad-and-every-player-in-france) or from live matches
 - [Betfair Odds](https://www.betfair.com/sport)
 - [kickoff.ai](http://kickoff.ai/)
+- [Stan makes Euro predictions!](http://www.statsblogs.com/2016/06/11/stan-makes-euro-predictions/)
 
-<br>
 
 ### Models
 
 T.B.C.
-
-<br>
-
 
 ### Predictions
 
