@@ -2,11 +2,10 @@
 # Euro 2016 - Data Preparation
 # ------------------------------------------------------------------------------
 
-library(data.table)
-
 # Load CSV
-d_team <- fread("./input/team_data.csv")
-d_match <- fread("./input/match_data.csv")
+library(data.table)
+d_team <- fread("./input/team_data.csv", stringsAsFactors = TRUE)
+d_match <- fread("./input/match_data.csv", stringsAsFactors = TRUE)
 
 # Merge Home Team Stats
 d_home <- d_match[, c(2,3), with = FALSE]
@@ -28,4 +27,3 @@ d_comb <- merge(d_comb, d_match[, c(2, 5:ncol(d_match)), with = F], by = "id")
 
 # Convert to normal df
 d_comb <- as.data.frame(d_comb)
-
