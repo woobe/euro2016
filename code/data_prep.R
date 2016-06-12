@@ -27,3 +27,26 @@ d_comb <- merge(d_comb, d_match[, c(2, 5:ncol(d_match)), with = F], by = "id")
 
 # Convert to normal df
 d_comb <- as.data.frame(d_comb)
+
+# Add a Reverse version (i.e. flip home/away as they are not truly home/away)
+d_rev_left <- d_comb[, 2:25]
+d_rev_right <- d_comb[, 26:49]
+d_match_rev <- d_match[, c("odds_a", "odds_d", "odds_h",
+                           "koai_a", "koai_h",
+                           "goal_a", "goal_h"),
+                       with = FALSE]
+d_comb_rev <- data.frame(id = d_comb$id,
+                         d_rev_right, d_rev_left, d_match_rev)
+colnames(d_comb_rev) <- colnames(d_comb)
+
+# Combine
+d_comb_final <- rbind(d_comb, d_comb_rev)
+
+# Add more targets
+d_comb_final$goal_diff <- d_comb_final$goal_h - d_comb_final$goal_a
+d_comb_final$goal_total <- d_comb_final$goal_h + d_comb_final$goal_a
+
+# Clean up
+rm(d_away, d_home, d_comb, d_comb_rev, d_match, d_match_rev,
+   d_rev_left, d_rev_right, d_team)
+
