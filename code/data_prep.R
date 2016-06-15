@@ -29,8 +29,8 @@ d_comb <- merge(d_comb, d_match[, c(2, 5:ncol(d_match)), with = F], by = "id")
 d_comb <- as.data.frame(d_comb)
 
 # Add a Reverse version (i.e. flip home/away as they are not truly home/away)
-d_rev_left <- d_comb[, 2:25]
-d_rev_right <- d_comb[, 26:49]
+d_rev_left <- d_comb[, 2:30]
+d_rev_right <- d_comb[, 31:59]
 d_match_rev <- d_match[, c("odds_a", "odds_d", "odds_h",
                            "koai_a", "koai_h",
                            "goal_a", "goal_h"),
