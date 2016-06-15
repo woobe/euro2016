@@ -15,6 +15,7 @@
 - [Betfair Odds](https://www.betfair.com/sport)
 - [kickoff.ai](http://kickoff.ai/)
 - [Stan makes Euro predictions!](http://www.statsblogs.com/2016/06/11/stan-makes-euro-predictions/)
+- [Quantifying Information T.B.A.](https://grollchristian.wordpress.com/2016/06/13/germany-most-likely-to-win-euro-2016/)
 
 
 ### Models
