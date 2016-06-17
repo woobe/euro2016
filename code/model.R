@@ -28,11 +28,11 @@ model <- h2o.deeplearning(x = features,
                  y = "goal_h",
                  activation = "RectifierWithDropout",
                  hidden = c(50, 100, 200),
-                 epochs = 2000,
-                 l1 = 1e-3,
-                 l2 = 1e-3,
+                 epochs = 500,
+                 l1 = 1e-7,
+                 l2 = 1e-7,
                  max_w2 = 10,
-                 input_dropout_ratio = 0.05,
+                 input_dropout_ratio = 0.2,
                  variable_importances = TRUE,
                  standardize = TRUE,
                  score_duty_cycle = 1,
@@ -40,16 +40,10 @@ model <- h2o.deeplearning(x = features,
                  score_validation_samples = 0,
                  regression_stop = -1,
                  shuffle_training_data = TRUE,
-                 #learn_rate = 0.01,
-                 #ntrees = 10,
                  nfolds = 10,
                  seed = 1234,
                  training_frame = hex_data)
 print(model)
-
-
-
-
 print(h2o.varimp(model))
 
 d_varimp <- as.data.frame(h2o.varimp(model))
